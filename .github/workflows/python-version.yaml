@@ -1,0 +1,14 @@
+name: Python-version
+
+on: push
+
+jobs:
+  check-python-version:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step one
+      uses: actions/checkout@v2
+    - name: Step two
+      uses: actions/setup-python@v2
+    - name: Step three
+      run: python --version
